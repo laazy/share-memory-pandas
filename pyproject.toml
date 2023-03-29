@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "share-memory-pandas"
+version = "0.1.0"
+description = ""
+authors = ["laazy <616408874@qq.com>"]
+readme = "README.md"
+packages = [{include = "share_memory_pandas"}]
+
+[tool.poetry.dependencies]
+python = "3.8.*"
+pandas = "^1.5.3"
+
+
+[[tool.poetry.source]]
+name = "aliyun"
+url = "https://mirrors.aliyun.com/pypi/simple"
+default = true
+secondary = false
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
